@@ -1,1 +1,39 @@
-{"author":"MyToolster","bin":{"free-llm-models":"./bin/cli.js"},"bugs":{"url":"https://github.com/open-free-llm-api/free-llm-models/issues"},"description":"A curated list of free LLM APIs and models. Query 500+ free models from 30+ providers right from your terminal.","engines":{"node":">=16"},"homepage":"https://freellm.net","keywords":["llm","free","ai","models","api","openai","claude","gpt"],"license":"MIT","main":"lib/index.js","name":"free-llm-models","repository":{"type":"git","url":"https://github.com/open-free-llm-api/free-llm-models.git"},"scripts":{"test":"node --test test/"},"version":"1.0.0"}
+{
+  "name": "free-llm-models",
+  "version": "1.0.0",
+  "description": "A curated list of free LLM APIs and models. Query 500+ free models from 30+ providers right from your terminal.",
+  "main": "lib/index.js",
+  "bin": {
+    "free-llm-models": "./bin/cli.js"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node --check server.js lib/index.js bin/cli.js",
+    "lint": "node --check server.js lib/index.js bin/cli.js",
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "llm",
+    "free",
+    "ai",
+    "models",
+    "api",
+    "openai",
+    "claude",
+    "gpt"
+  ],
+  "author": "MyToolster",
+  "license": "MIT",
+  "homepage": "https://freellm.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-free-llm-api/free-llm-models.git"
+  },
+  "bugs": {
+    "url": "https://github.com/open-free-llm-api/free-llm-models/issues"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
